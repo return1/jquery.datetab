@@ -1,5 +1,5 @@
 /**
-* jQuery.datetab - comfortable auto-tabbing for date/time fields
+* jQuery.dateTab - comfortable auto-tabbing for date/time fields
 *
 * version 1.0
 *
@@ -15,7 +15,7 @@
 
 (function ($) {
 
-    $.fn.autoTab = function () {
+    $.fn.dateTab = function () {
 
         return this.live('keydown keyup', function (event) {
             var key,
@@ -56,7 +56,7 @@
             specialkeys = [8, 9, 16, 17, 18, 19, 20, 27, 33, 34, 35, 36, 37, 38, 39, 40, 45, 46, 144, 145, 224];
 
             if (!maxlength) {
-                throw ("please specify the maxlength attribute on all autoTab fields");
+                throw ("please specify the maxlength attribute on all dateTab fields");
             }
 
             /**

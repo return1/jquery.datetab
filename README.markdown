@@ -19,7 +19,7 @@ Javascript:
 
     $(".day, .month, .year").dateTab();
 
-data-prev and data-next attributes should hold the a class of the prev/next input field. I don«t use ids or the name attribute to make the html-snippet easier to copy&paste reuse within a project
+data-prev and data-next attributes should hold the a class of the prev/next input field. I donÂ´t use ids or the name attribute to make the html-snippet easier to copy&paste reuse within a project
 
 Features
 --------
