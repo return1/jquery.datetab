@@ -13,7 +13,7 @@ HTML:
 
     <input type="text" data-next="month" name="day" class="day" maxlength="2"/>
     <input type="text" data-prev="day" data-next="year" name="month" class="month" maxlength="2"/>
-    <input type="text" data-prev="month" name="year" class="year" maxlength="2"/>
+    <input type="text" data-prev="month" name="year" class="year" maxlength="4"/>
 
 Javascript:
 
