@@ -46,7 +46,7 @@ License
 
 The MIT License
 
-Copyright (c) 2010 Dominique Lederer, http://return1.at/
+Copyright (c) 2010 Dominique Lederer, [http://return1.at][2]
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -69,3 +69,4 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 [0]: http://github.com/return1/jquery.datetab "jQuery.datetab"
 [1]: http://www.mathachew.com/sandbox/jquery-autotab/ "jQuery.autotab"
+[2]: http://return1.at/ "return1"
