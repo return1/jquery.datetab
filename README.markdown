@@ -28,7 +28,13 @@ Features
 * restricting input to numbers
 * preserving special keys functionality (like tab, shift-tab, cursor keys,...)
 * backspace delete to previous fields
-* fixes the keyup-focus (double autotab if next field is already on maxlength) problem other autotab plugins suffer from by tracking keydown events
+
+Why another autotab plugin?
+---------------------------
+
+* the keyup-focus (unintended double-tab if next field is already on maxlength) problem other autotab plugins suffer from is fixed
+* this plugin also affects elements that have not yet been added to the DOM through jquery.live()
+
 
 Requirements
 ------------
