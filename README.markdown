@@ -15,6 +15,8 @@ HTML:
     <input type="text" data-prev="day" data-next="year" name="month" class="month" maxlength="2"/>
     <input type="text" data-prev="month" name="year" class="year" maxlength="4"/>
 
+Note: all input elements using dateTab() should be siblings in the DOM tree.
+
 Javascript:
 
     $(".day, .month, .year").dateTab();

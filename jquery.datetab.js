@@ -83,7 +83,7 @@
                 //special treatment for the backspace key:
                 //if nothing to delete in this field, focus previous one and delete there
                 if (key === 8 && this.value.length === 0 && prev) {
-                    $(this).prev(prev).focus();
+                    $(this).siblings(prev).focus();
                 }
 
             }
@@ -96,7 +96,7 @@
 
                 //do autotab
                 if (keyIsValid && this.value.length === maxlength && next) {
-                    $(this).next(next).change().select(); //trigger change on autotabbing , select next field
+                    $(this).siblings(next).change().select(); //trigger change on autotabbing , select next field
                 }
 
                 //reset pressed key in the custom data array
