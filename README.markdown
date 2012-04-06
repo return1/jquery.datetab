@@ -46,6 +46,7 @@ this plugins requires jQuery >= 1.4.3
 Changelog
 ---------
 
+* 1.1 - jQuery 1.7 compatible
 * 1.0 - initial release
 
 
