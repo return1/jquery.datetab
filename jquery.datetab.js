@@ -1,7 +1,7 @@
 /**
 * jQuery.dateTab - comfortable auto-tabbing for date/time fields
 *
-* version 1.0
+* version 1.1
 *
 * http://return1.at/
 * http://github.com/return1/jquery.datetab
@@ -26,7 +26,7 @@
                 keyIsValid;
 
             key = event.which;
-            maxlength = $(this).attr('maxlength');
+            maxlength = parseInt($(this).attr('maxlength'), 10);
             next = '.' + $(this).data('next');
             prev = '.' + $(this).data('prev');
             /**
@@ -83,7 +83,7 @@
                 //special treatment for the backspace key:
                 //if nothing to delete in this field, focus previous one and delete there
                 if (key === 8 && this.value.length === 0 && prev) {
-                    $(this).siblings(prev).focus();
+                    $(this).prevAll(prev+':first').focus();
                 }
 
             }
@@ -96,7 +96,7 @@
 
                 //do autotab
                 if (keyIsValid && this.value.length === maxlength && next) {
-                    $(this).siblings(next).change().select(); //trigger change on autotabbing , select next field
+                    $(this).nextAll(next+':first').change().select(); //trigger change on autotabbing , select next field
                 }
 
                 //reset pressed key in the custom data array
